@@ -26,5 +26,5 @@ app.set('view engine', 'handlebars');
 var routes = require('./controllers/cars_controller.js');
 app.use('/', routes);
 
-process.env.PORT || 3000;
+var port = process.env.PORT || 3000;
 app.listen(port);
